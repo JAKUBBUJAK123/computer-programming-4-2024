@@ -1,0 +1,9 @@
+name : Hello World
+on: [push]
+jobs:
+  Hello-World:
+  runs-on: ubuntu-latest
+  seps:
+    -name: "My first command"
+    run: echo "Kuba"
+    
