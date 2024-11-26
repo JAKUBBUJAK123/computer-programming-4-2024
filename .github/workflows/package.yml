@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout repo"
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'coretto'
+          distribution: 'corretto'
       - name: "Run maven test"
         run: mvn -DskipTests package
-      - run: ls -la target/
+      - run: ls -la target/*.jar target/app.jar
     
