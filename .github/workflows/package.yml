@@ -12,5 +12,5 @@ jobs:
           distribution: 'coretto'
       - name: "Run maven test"
         run: mvn -DskipTests package
-      
+      - run: ls -la target/
     
